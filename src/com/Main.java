@@ -24,7 +24,7 @@ public class Main {
         // 将数据按密度分为训练集和测试集
         data = divider.divideData(data, density);
         for(int i = 0; i < Integer.parseInt(data.get(data.size() - 1).getClassification()); i++) {
-            trainData.add(data.get(i));
+            trainData.add(data.get(i));  // trainData的类别值全是-1,有问题
         }
 
         for(int i = Integer.parseInt(data.get(data.size() - 1).getClassification()); i < data.size() - 1; i++) {

@@ -49,8 +49,20 @@ public class Divider {
 //        }
         // 对每种类型的数据进行备份
         ArrayList<Data> copyType1 = new ArrayList<Data>(type1);
+        for(int i = 0 ; i < type1.size(); i++) {
+            Data data = new Data(type1.get(i).getSepalLength(), type1.get(i).getSepalWidth(), type1.get(i).getPetalLength(), type1.get(i).getPetalWidth(), type1.get(i).getClassification());
+            copyType1.add(data);
+        }
         ArrayList<Data> copyType2 = new ArrayList<Data>(type2);
+        for(int i = 0 ; i < type2.size(); i++) {
+            Data data = new Data(type2.get(i).getSepalLength(), type2.get(i).getSepalWidth(), type2.get(i).getPetalLength(), type1.get(i).getPetalWidth(), type1.get(i).getClassification());
+            copyType2.add(data);
+        }
         ArrayList<Data> copyType3 = new ArrayList<Data>(type3);
+        for(int i = 0 ; i < type3.size(); i++) {
+            Data data = new Data(type3.get(i).getSepalLength(), type3.get(i).getSepalWidth(), type3.get(i).getPetalLength(), type1.get(i).getPetalWidth(), type1.get(i).getClassification());
+            copyType3.add(data);
+        }
         // 获取每个类型的抽样数
         System.out.println("type1.size()为：" + type1.size() + "\nnum为：" + num + "\nnumTrain为：" + numTrain);
         //int numType1 = (int)type1.size() / num * numTrain; 错误写法
@@ -64,14 +76,14 @@ public class Divider {
         System.out.println("实际训练集数量为：" + numTrain + "\n实际测试集数量为：" + numTest + "\n");
 
         // 下面开始对每个类型抽取样本
-        take(result, type1, numType1);
+        take(result, type1, copyType1, numType1);
         System.out.println("第一次抽取后结果集大小：" + result.size());
 //        for(int i = 0; i < result.size(); i++) {     //该片段为测试片段
 //            System.out.println(result.get(i).getClassification());
 //        }
-        take(result, type2, numType2);
+        take(result, type2, copyType2, numType2);
         System.out.println("第二次抽取后结果集大小：" + result.size());
-        take(result, type3, numType3);
+        take(result, type3, copyType3, numType3);
         System.out.println("第三次抽取后结果集大小：" + result.size());
 
         // 下面对将每个类型剩余的数据加入到result中
@@ -100,7 +112,7 @@ public class Divider {
         return false;
     }
     // 需要类型数据，抽样数和一个可以不断加入的结果
-    static void take(ArrayList<Data> result, ArrayList<Data> type, int numType) {
+    static void take(ArrayList<Data> result, ArrayList<Data> type, ArrayList<Data> copyType, int numType) {
         // 下面开始对每个类型抽取样本
         // 这里有个大坑，引用类型数据需要格外小心
         //ArrayList<Data> newType = new ArrayList<>(type);
@@ -126,15 +138,15 @@ public class Divider {
         // 将被选中的样本加入到result中
         for(int i = 0; i < ints.length; i++) {
             result.add(newType.get(ints[i]));
-            type.get(ints[i]).setClassification("-1");
+            copyType.get(ints[i]).setClassification("-1");
         }
         //return result;
     }
     static void addLeft(ArrayList<Data> result, ArrayList<Data> type, ArrayList<Data> copyType) {
         for(int i = 0; i < type.size(); i++) {
-            if(type.get(i).getClassification().equals("-1")) {
+            if(copyType.get(i).getClassification().equals("-1")) {
             } else {
-                result.add(copyType.get(i));
+                result.add(type.get(i));
             }
         }
         //return result;

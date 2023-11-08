@@ -37,6 +37,14 @@ public class Trainer {
         ArrayList<Data> type1 = new ArrayList<>();
         ArrayList<Data> type2 = new ArrayList<>();
         ArrayList<Data> type3 = new ArrayList<>();
+//        System.out.println("现在检查训练集中是否有-1标签");
+//        for(Data i : train_data) {
+//            if(i.getClassification().equals("-1")) {
+//                System.out.println("存在-1");
+//                break;
+//            }
+//        }
+//        System.out.println("没有-1");
         for(Data i : train_data) {
             switch(i.getClassification()) {
                 case "1" :
@@ -93,6 +101,7 @@ public class Trainer {
         charData.setCharOfAttrib1(doubles);
 
         // 提取特征2
+        doubles = new double[2];
         avr = 0;
         vari = 0;
         sum = 0;
@@ -110,6 +119,7 @@ public class Trainer {
         charData.setCharOfAttrib2(doubles);
 
         // 提取特征3
+        doubles = new double[2];
         avr = 0;
         vari = 0;
         sum = 0;
@@ -127,6 +137,7 @@ public class Trainer {
         charData.setCharOfAttrib3(doubles);
 
         // 提取特征4
+        doubles = new double[2];
         avr = 0;
         vari = 0;
         sum = 0;
