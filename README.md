@@ -21,17 +21,17 @@ Due to the author's limited energy in the near future, only the Chinese version 
 
 贝叶斯原理
 
-![1](D:\4archived data\Learning\School Learning\智能系统\作业一 贝叶斯分类\GaussBayes\picture\1.jpg)
+![1](.\picture\1.jpg)
 
-![2](D:\4archived data\Learning\School Learning\智能系统\作业一 贝叶斯分类\GaussBayes\picture\2.jpg)
+![2](.\picture\2.jpg)
 
 对于贝叶斯原理上面的内容已经将得很详细，下面对我们当前面对的数据进行分析（每条数据有五个值，前四个值为连续型数值，最后一个值为分类型数值）
 
-![3](D:\4archived data\Learning\School Learning\智能系统\作业一 贝叶斯分类\GaussBayes\picture\3.jpg)
+![3](.\picture\3.jpg)
 
 因为属性值$$X_{i}$$为离散型数值，因此我们需要用以下的高斯公式去描述$$P(X_{i}|C_{j})$$
 
-![4](D:\4archived data\Learning\School Learning\智能系统\作业一 贝叶斯分类\GaussBayes\picture\4.jpg)
+![4](.\picture\4.jpg)
 
 # 待解决的问题
 
