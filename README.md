@@ -21,9 +21,9 @@ Due to the author's limited energy in the near future, only the Chinese version 
 
 贝叶斯原理
 
-![contents](.\picture\1.jpg)
+![image](https://github.com/Leo-Liu19/GaussBayes/blob/master/picture/2.jpg)
 
-![contents](.\picture\2.jpg)
+![image]([GaussBayes/picture/2.jpg at master · Leo-Liu19/GaussBayes (github.com)](https://github.com/Leo-Liu19/GaussBayes/blob/master/picture/2.jpg))
 
 对于贝叶斯原理上面的内容已经将得很详细，下面对我们当前面对的数据进行分析（每条数据有五个值，前四个值为连续型数值，最后一个值为分类型数值）
 
