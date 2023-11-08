@@ -23,15 +23,15 @@ Due to the author's limited energy in the near future, only the Chinese version 
 
 ![image](https://github.com/Leo-Liu19/GaussBayes/blob/master/picture/2.jpg)
 
-![image]([GaussBayes/picture/2.jpg at master · Leo-Liu19/GaussBayes (github.com)](https://github.com/Leo-Liu19/GaussBayes/blob/master/picture/2.jpg))
+![image](https://github.com/Leo-Liu19/GaussBayes/blob/master/picture/2.jpg)
 
 对于贝叶斯原理上面的内容已经将得很详细，下面对我们当前面对的数据进行分析（每条数据有五个值，前四个值为连续型数值，最后一个值为分类型数值）
 
-![contents](.\picture\3.jpg)
+![image](https://github.com/Leo-Liu19/GaussBayes/blob/master/picture/3.jpg)
 
 因为属性值$$X_{i}$$为离散型数值，因此我们需要用以下的高斯公式去描述$$P(X_{i}|C_{j})$$
 
-![contents](.\picture\4.jpg)
+![image](https://github.com/Leo-Liu19/GaussBayes/blob/master/picture/4.jpg)
 
 # 待解决的问题
 
