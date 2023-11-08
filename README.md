@@ -14,7 +14,7 @@
 
 <ul>
     <li>语言：Java</li>
-    <li>编译器：IntelliJ IDEA 2023.2.2</li>
+    <li>开发工具：IntelliJ IDEA 2023.2.2</li>
 </ul>
 
 # 原理阐释
