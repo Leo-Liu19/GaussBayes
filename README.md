@@ -1,4 +1,4 @@
-高斯朴素贝叶斯分类器
+**高斯朴素贝叶斯分类器**<br />
 <br />笔者近期精力有限，目前只编写了该项目的中文版，英文版会在不久的将来推出
 <br />Due to the author's limited energy in the near future, only the Chinese version of the project has been written, and the English version will be launched in the future
 
