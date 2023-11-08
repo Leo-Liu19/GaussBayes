@@ -29,7 +29,7 @@ Due to the author's limited energy in the near future, only the Chinese version 
 
 ![image](https://github.com/Leo-Liu19/GaussBayes/blob/master/picture/3.jpg)
 
-因为属性值$$X_{i}$$为离散型数值，因此我们需要用以下的高斯公式去描述$$P(X_{i}|C_{j})$$
+因为属性值$$X_{i}$$为连续型数值，因此我们需要用以下的高斯公式去描述$$P(X_{i}|C_{j})$$
 
 ![image](https://github.com/Leo-Liu19/GaussBayes/blob/master/picture/4.jpg)
 
